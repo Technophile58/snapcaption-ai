@@ -1,0 +1,313 @@
+/* ===== GOOGLE FONT ===== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(145deg, #0f172a, #1e293b);
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* ===================== NAVBAR ===================== */
+.navbar {
+  width: 100%;
+  padding: 12px 0;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.nav-content {
+  max-width: 1100px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.nav-links {
+  display: flex;
+  gap: 18px;
+}
+
+.nav-links a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #cbd5e1;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #60a5fa;
+}
+
+.logout-btn {
+  background: #ef4444;
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.logout-btn:hover {
+  background: #dc2626;
+}
+
+/* ===================== HOME PAGE ===================== */
+.hero-section {
+  width: 100%;
+  padding: 70px 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 780px;
+}
+
+/* Heading */
+.hero-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero-highlight {
+  font-size: 46px;
+  background: linear-gradient(135deg, #7dd3fc, #818cf8);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 700;
+}
+
+/* Text */
+.hero-subtext {
+  font-size: 18px;
+  color: #d1d5db;
+  margin-top: 15px;
+  line-height: 1.65;
+}
+
+.hero-details {
+  font-size: 17px;
+  color: #cbd5e1;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+.hero-smalltag {
+  font-size: 15px;
+  color: #94a3b8;
+  margin-top: 18px;
+}
+
+/* Button */
+.btn-hero {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  padding: 12px 26px;
+  border-radius: 12px;
+  border: none;
+  font-size: 17px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-top: 28px;
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.45);
+}
+
+.btn-hero:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.6);
+}
+
+/* ===================== CAPTION PAGE ===================== */
+
+.container {
+  max-width: 520px;
+  margin: 35px auto;
+  padding: 20px;
+}
+
+.card {
+  padding: 25px;
+  border-radius: 18px;
+  text-align: center;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.22);
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border-radius: 12px;
+  border: none;
+  background: rgba(255, 255, 255, 0.18);
+  color: white;
+}
+
+input::file-selector-button {
+  background: #334155;
+  padding: 8px 14px;
+  border-radius: 8px;
+  color: #cbd5e1;
+  border: none;
+  cursor: pointer;
+}
+
+/* Generate Button */
+.btn-primary {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  padding: 12px;
+  border-radius: 12px;
+  width: 100%;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.45);
+}
+
+/* Caption Output */
+.caption-box {
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  padding: 18px;
+  border-radius: 14px;
+  margin-top: 18px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.btn-copy {
+  background: #22c55e;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+.btn-copy:hover {
+  background: #16a34a;
+}
+
+/* Image preview */
+.preview {
+  width: 100%;
+  max-height: 360px;
+  object-fit: contain;
+  background: rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  border-radius: 14px;
+  margin-top: 18px;
+}
+
+/* Loader */
+.loader {
+  border: 4px solid rgba(255, 255, 255, 0.2);
+  border-top: 4px solid #fff;
+  width: 44px;
+  height: 44px;
+  margin: 15px auto;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* ===================== FOOTER ===================== */
+.footer {
+  text-align: center;
+  margin-top: 60px;
+  color: #cbd5e1;
+  padding-bottom: 30px;
+  font-size: 15px;
+}
+
+.footer span {
+  color: #ff75a0;
+}
+
+/* ===================== ANIMATIONS ===================== */
+
+.fade-in {
+  animation: fadeIn 1s ease;
+}
+
+.slide-up {
+  animation: slideUp 1.1s ease;
+}
+
+.floating {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-7px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ===================== RESPONSIVE ===================== */
+
+@media (max-width: 480px) {
+
+  .hero-title {
+    font-size: 32px;
+  }
+
+  .hero-highlight {
+    font-size: 34px;
+  }
+
+  .hero-section {
+    padding: 40px 15px;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .preview {
+    max-height: 250px;
+  }
+}
